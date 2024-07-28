@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #121211;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins',sans-serif;
+        }
+       nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 90px;
+        background-color: rgb(186, 192, 15);
+
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin :0 23px;
+        }
+        .section {
+            padding: 6rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            min-height: 100vh;  
+        }
+        nav ul a li{
+            text-decoration: none;
+            color:white;
+        }
+        nav ul a:hover li{
+            color:rgb(153,153,226);
+            font-size: 1.04rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection {
+            display:flex;
+            justify-content: space-around;
+        }
+        .firstSection > div {
+            width:30%;
+        }
+        .leftSection {
+            font-size: 3rem;
+            margin:110px;
+        }
+        .rightSection img{
+            width:80%;
+            margin:50px;
+
+        }
+        .pink{
+            color: rgb(232, 230, 231);
+        }
+        #element{
+            color: #ebe1e5;
+        }
+    
+        .leftSection .btn{
+            padding:12px;
+        }
+        .leftSection .buttons{
+            padding:50px 0px;
+    
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .section p {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left" style="color:rgb(148, 183, 19)"> My Portfolio </div>
+            <div class="right"> 
+                <ul>
+                    <a href="#Home"><li>Home</li></a>
+                    <a href="#About"><li>About</li></a>
+                    <a href="#Contact"><li>Contact Me</li></a>
+                    <a href="#Skills"><li>Skills</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="Home" class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is<span class="Blue"style="color:blue"> Naveen</span>
+                and I am a  
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Myresume.pdf"><button class="btn" style="background-color:#1e2167; color:white; border:2px solid white; font-size:20px;border-radius:5%">My Resume</button></a>
+                    <a href="https://www.linkedin.com/in/naveen-polampalli-4th-62961b255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><button class="btn" style="background-color:#1e2167; color:white; border:2px solid white; font-size:20px;border-radius:5%">have a look at my linkendin</button></a>
+                    <a href="https://github.com/NaveenPolampalli"><button class="btn" style="background-color:#1e2167; color:white; border:2px solid white; font-size:20px;border-radius:5%">See GitHub</button></a>
+                </div>
+            </div>
+                
+            <div class="rightSection">
+                <img src="bg.webp" alt="" >
+            </div>
+        </section>
+        <section id="Skills" class="section">
+            <h2 style="color:#40cdff">Skills</h2>
+            <ul>
+                <li>Programming Languages: Java,Python, JavaScript</li>
+                <li>Web Development: HTML, CSS, React </li>
+                <li>Tools: Git, SQL</li>
+            </ul>
+        </section>
+    
+        <section id="About" class="section">
+            <h2 style="color:#40cdff">About Me</h2>
+            <p>I am a continuous learner with strong analytical and problem-solving skills. I have worked on numerous projects using a variety of programming languages and possess proficient knowledge in Java, Python, and front-end technologies. Beyond my technical expertise, I enjoy traveling with friends and have a keen interest in sports, including volleyball, cricket, and kho kho.
+
+ 
+        </section>
+        <section id="Contact" class="section">
+            <h2 style="color:#40cdff">Contact</h2>
+            <p>I'm always eager to connect with fellow developers, collaborators, and anyone interested in technology and innovation. Whether you have a project in mind, need assistance with a technical challenge, or just want to chat about programming and technology, feel free to reach out!</p>
+
+            <p> You can contact me through the following channels:<br>
+
+            
+            GitHub: <a href="https://github.com/NaveenPolampalli">github</a><br>
+            Instagram:<a href="@comrade434">insta</a><br>
+            Email: <a href=naveenpolampalli1433@gmail.com>Mail</a></p><br>
+            <!-- Add more contact methods as needed -->
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['', 'Software Engineer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
